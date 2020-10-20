@@ -264,6 +264,23 @@ margin: 3.5%;
   font-size: 17px;
   
 }
+/*End Of What You Do */
+
+
+
+/*Start of Service plan grid */
+.service-grid-container {
+  display: grid;
+}
+
+.service-grid-item {
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  border: solid;
+  color: black;
+}
+
 
 /* start of reach out style */
 .contact {
