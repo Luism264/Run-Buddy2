@@ -11,11 +11,19 @@ body {
 }
  /* apply styles to <header> */
  header {
-   padding: 20px 35px;
+  background-image: url(../images/hero-bg.jpg);
+   background-size: cover;
+   background-position: center; 
+  padding: 20px 35px;
    background-color: #39a6b2;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   background-attachment: fixed;
+   background-position: 80%;
  }
  
  header h1 {
@@ -23,6 +31,7 @@ body {
    font-size: 36px;
    color: #fce138;
    margin: 0;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
    }
  header a {
    text-decoration: none;
@@ -42,6 +51,7 @@ body {
    padding: 10px 15px;
    font-weight: lighter;
    font-size: 1.55vw;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  }
 /* footer section */
  footer {
@@ -77,6 +87,8 @@ text-align: right;
    justify-content: center;
    flex-wrap: wrap;
    align-items: flex-start;
+   background-attachment: fixed;
+   background-position: 80%;
 }
 
 .hero-cta {
@@ -91,15 +103,18 @@ text-align: right;
 font-style: italic;
 font-size: 55px;
 color: #fce138;
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
   border: 3px solid #024e76;
-background-color: #fce138;
+background-color: rgba(252, 225,56, 0.8);
 padding: 20px;
 color: #024e76;
 width: 40%;
 margin: 3.5%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
   }
   .hero-form h3 {
     font-size: 24px;
@@ -118,6 +133,7 @@ margin: 3.5%;
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 15px;
 }
 .hero-form label{
   margin: 0 5px;
@@ -128,6 +144,7 @@ margin: 3.5%;
   border: none;
   padding:  10px 20px;
   font-size: 16px;
+  border-radius: 15px;
 }
   /* Hero style end */
   
@@ -310,7 +327,7 @@ margin: 3.5%;
   }
 
 
-}
+
 
 /* Service style begins */
 .services {
@@ -378,6 +395,7 @@ margin: 3.5%;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 15px;
 }
 
 .contact-form button {
@@ -388,6 +406,7 @@ margin: 3.5%;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 15px;
 }
 
 /* end of reach out style */
@@ -399,11 +418,13 @@ margin: 3.5%;
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   header nav ul {
@@ -419,6 +440,7 @@ margin: 3.5%;
  footer h2, footer div {
    text-align: center;
    width: 100%;
+   text-shadow: rgba(0, 0, 0, 0.5);
  }
 
 .hero-cta, .hero-form {
